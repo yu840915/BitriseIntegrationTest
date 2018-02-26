@@ -15,6 +15,9 @@
 		8EA17632203FFC8800C24E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA17631203FFC8800C24E88 /* Assets.xcassets */; };
 		8EA17635203FFC8800C24E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA17633203FFC8800C24E88 /* LaunchScreen.storyboard */; };
 		8EA17640203FFC8800C24E88 /* BitriseIntegrationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1763F203FFC8800C24E88 /* BitriseIntegrationTestTests.swift */; };
+		8EA1764E20441B2000C24E88 /* CircleProgressView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA1764B20441B1F00C24E88 /* CircleProgressView.framework */; };
+		8EA1764F20441B2000C24E88 /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA1764C20441B2000C24E88 /* UPCarouselFlowLayout.framework */; };
+		8EA1765020441B2000C24E88 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA1764D20441B2000C24E88 /* XLPagerTabStrip.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 		8EA1763B203FFC8800C24E88 /* BitriseIntegrationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitriseIntegrationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA1763F203FFC8800C24E88 /* BitriseIntegrationTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitriseIntegrationTestTests.swift; sourceTree = "<group>"; };
 		8EA17641203FFC8800C24E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EA1764B20441B1F00C24E88 /* CircleProgressView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CircleProgressView.framework; path = Carthage/Build/iOS/CircleProgressView.framework; sourceTree = "<group>"; };
+		8EA1764C20441B2000C24E88 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPCarouselFlowLayout.framework; path = Carthage/Build/iOS/UPCarouselFlowLayout.framework; sourceTree = "<group>"; };
+		8EA1764D20441B2000C24E88 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
 		B423E369E438B1DA36F626F4 /* Pods-BitriseIntegrationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitriseIntegrationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitriseIntegrationTest/Pods-BitriseIntegrationTest.release.xcconfig"; sourceTree = "<group>"; };
 		D0443B97D04EE91E819256BD /* Pods_BitriseIntegrationTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitriseIntegrationTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD1932116BD3493F7B37075 /* Pods_BitriseIntegrationTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitriseIntegrationTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA1764E20441B2000C24E88 /* CircleProgressView.framework in Frameworks */,
+				8EA1765020441B2000C24E88 /* XLPagerTabStrip.framework in Frameworks */,
+				8EA1764F20441B2000C24E88 /* UPCarouselFlowLayout.framework in Frameworks */,
 				3536861168B86B681433C6C6 /* Pods_BitriseIntegrationTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +131,9 @@
 		B13785A07CF00D166112189C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8EA1764B20441B1F00C24E88 /* CircleProgressView.framework */,
+				8EA1764C20441B2000C24E88 /* UPCarouselFlowLayout.framework */,
+				8EA1764D20441B2000C24E88 /* XLPagerTabStrip.framework */,
 				D0443B97D04EE91E819256BD /* Pods_BitriseIntegrationTest.framework */,
 				FCD1932116BD3493F7B37075 /* Pods_BitriseIntegrationTestTests.framework */,
 			);
@@ -141,6 +153,7 @@
 				8EA17625203FFC8800C24E88 /* Resources */,
 				2FDA1622B99C2CCF12043220 /* [CP] Embed Pods Frameworks */,
 				E4CF0D6F817FAF1378BF86DB /* [CP] Copy Pods Resources */,
+				8EA1764A20441AC600C24E88 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -307,6 +320,22 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitriseIntegrationTestTests/Pods-BitriseIntegrationTestTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8EA1764A20441AC600C24E88 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/UPCarouselFlowLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/XLPagerTabStrip.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CircleProgressView.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks ";
 		};
 		E4CF0D6F817FAF1378BF86DB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -487,6 +516,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3G742W25V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BitriseIntegrationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sw.BitriseIntegrationTest;
@@ -503,6 +536,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3G742W25V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BitriseIntegrationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sw.BitriseIntegrationTest;

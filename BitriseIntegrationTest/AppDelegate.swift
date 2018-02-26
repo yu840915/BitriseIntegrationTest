@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import CircleProgressView
+import XLPagerTabStrip
+import UPCarouselFlowLayout
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
