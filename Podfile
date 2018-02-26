@@ -4,11 +4,6 @@
 target 'BitriseIntegrationTest' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for BitriseIntegrationTest
-
-  target 'BitriseIntegrationTestTests' do
-    inherit! :search_paths
     pod 'AFNetworking', '3.1.0'
     pod 'AppsFlyerFramework', '4.8.1'
     pod 'BlocksKit', '2.2.5'
@@ -46,6 +41,11 @@ target 'BitriseIntegrationTest' do
     pod 'UIImage+ImageWithColor', '1.3'
     pod 'UITextView+Placeholder', '1.2.0'
     pod 'VCTransitionsLibrary', '1.5.0'
+
+  # Pods for BitriseIntegrationTest
+
+  target 'BitriseIntegrationTestTests' do
+    inherit! :search_paths
   end
 
 end
