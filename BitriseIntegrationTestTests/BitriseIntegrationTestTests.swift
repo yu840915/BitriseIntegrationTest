@@ -22,7 +22,6 @@ class BitriseIntegrationTestTests: XCTestCase {
     }
     
     func testExample() {
-        XCTFail("Fail for test")
     }
     
 }
